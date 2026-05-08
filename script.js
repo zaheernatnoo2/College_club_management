@@ -150,4 +150,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // ── TOAST ──
     function showToast(msg,type='info'){ const c=document.getElementById('toast-container'),t=document.createElement('div'); t.className=`toast ${type}`; t.textContent=msg; c.appendChild(t); setTimeout(()=>{ t.style.transition='.3s ease'; t.style.opacity='0'; t.style.transform='translateX(40px)'; setTimeout(()=>t.remove(),350); },3000); }
 
+    // ── SPLASH HIDE ──
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            const splash = document.getElementById('splash-screen');
+            if(splash) {
+                splash.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+        }, 2500); // 2.5s to show the beautiful credit
+    });
+    // Prevent scrolling while splash is active
+    document.body.style.overflow = 'hidden';
+
 });
