@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexus Clubs | Discover Your Passion</title>
     <meta name="description" content="Explore premium college clubs, events, and join the Nexus community.">
+    <meta name="author" content="Zaheer Abass">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -13,6 +14,20 @@
 </head>
 
 <body data-theme="dark">
+
+    <!-- SPLASH SCREEN -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <div class="splash-logo">N<span>EXUS</span></div>
+            <div class="splash-loader">
+                <div class="loader-bar"></div>
+            </div>
+            <div class="splash-credit">
+                <span class="fade-in-text">Designed & Developed by</span>
+                <h1 class="creator-reveal">Zaheer Abass</h1>
+            </div>
+        </div>
+    </div>
 
     <!-- CURSOR -->
     <div class="cursor-dot" id="cursorDot"></div>
@@ -30,6 +45,12 @@
 
     <!-- TOAST CONTAINER -->
     <div class="toast-container" id="toast-container"></div>
+
+    <!-- CREATOR BADGE -->
+    <div class="creator-badge">
+        <span class="badge-text">Created by</span>
+        <span class="badge-name">Zaheer Abass</span>
+    </div>
 
     <!-- NAVBAR -->
     <nav class="navbar" id="navbar">
@@ -474,7 +495,13 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <div>© 2026 Nexus Clubs Organization. Designed with precision for excellence.</div>
+                <div class="footer-copyright">
+                    <p>© 2026 Nexus Clubs Organization. Designed with precision for excellence.</p>
+                    <div class="created-by">
+                        <span>Created by</span>
+                        <a href="#" class="creator-name">Zaheer Abass</a>
+                    </div>
+                </div>
                 <div class="footer-links">
                     <a href="#">Privacy</a>
                     <a href="#">Terms</a>
